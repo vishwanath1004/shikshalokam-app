@@ -1,0 +1,22 @@
+.welcome-card ion-img {
+  max-height: 35vh;
+  overflow: hidden;
+}
+
+img{
+  width: 80px !important;
+  height: 80px !important;
+  display: block;
+  margin: auto;
+}
+.custom-col
+{
+  min-width: 50%;   
+  padding: 0px;
+  max-width: 50%;
+  ion-card
+  {
+    text-align: center;
+    margin: 0px;
+  }
+}

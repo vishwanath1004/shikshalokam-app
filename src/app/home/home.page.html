@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+        Shikshalokam
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+      <ion-grid>
+        <ion-row >
+          <ion-col class="custom-col" *ngFor="let application of applications">
+            <ion-card (click)="openApp(application.id)">
+            <ion-card-header>
+            <img src="{{ application.icon }}"/>
+            </ion-card-header>
+            <ion-card-content>
+              <p>  {{ application.title}} </p>
+              <p> <small> {{ application.subTitle}} </small></p>
+              </ion-card-content>
+              </ion-card>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+</ion-content>
